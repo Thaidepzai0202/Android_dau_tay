@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="44dp"
+            android:paddingTop="32dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/primary_4"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <com.example.jaja.GradientTextView
+                    android:id="@+id/button_description"
+                    android:layout_width="133dp"
+                    android:layout_height="43dp"
+                    android:background="@color/primary_4"
+                    android:gravity="center"
+                    android:text="Description"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/primary_4"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <com.example.jaja.GradientTextView
+                    android:id="@+id/button_specification"
+                    android:layout_width="133dp"
+                    android:layout_height="43dp"
+                    android:background="@color/primary_4"
+                    android:gravity="center"
+                    android:text="Specification"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/content_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="24dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_product_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PEUGEOT - LR01"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/product_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The LR01 uses the same design as the most iconic bikes from PEUGEOT Cycles' 130-year history and combines it with agile, dynamic performance that's perfectly suited to navigating today's cities. As well as a lugged steel frame and iconic PEUGEOT black-and-white chequer design, this city bike also features a 16-speed Shimano Claris drivetrain.\nThe LR01 uses the same design as the most iconic bikes from PEUGEOT Cycles' 130-year history and combines it with agile, dynamic performance that's perfectly suited to navigating today's cities. As well as a lugged steel frame and iconic PEUGEOT black-and-white chequer design, this city bike also features a 16-speed Shimano Claris drivetrain."
+                    android:textColor="@color/white_60"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/specification_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="24dp"
+            android:scrollbars="none">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/frame"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frame: Vintage looking steel" />
+
+                <TextView
+                    android:id="@+id/fork"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fork: Steel" />
+
+                <TextView
+                    android:id="@+id/shiftLevers"
+                    style="@style/ContentProductStyle"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shift Levers: Shimano Claris, SL-R2000, 2x8S, Rapidfire plus" />
+
+                <TextView
+                    android:id="@+id/frontDerailleur"
+                    style="@style/ContentProductStyle"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Front Derailleur: Shimano Claris, FD-R2000" />
+
+                <TextView
+                    android:id="@+id/rearDerailleur"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rear Derailleur: Shimano Claris, RD-R2000" />
+
+                <TextView
+                    android:id="@+id/cassette"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cassette: Shimano Claris, CS-HG50-8S, 11-28T" />
+
+                <TextView
+                    android:id="@+id/crankset"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crankset: Aluminum, 50x34T, 170 mm" />
+
+                <TextView
+                    android:id="@+id/brakes"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brakes: Aluminum stirrup" />
+
+                <TextView
+                    android:id="@+id/wheelset"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wheelset: Aluminum" />
+
+                <TextView
+                    android:id="@+id/tires"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tires: Kenda 700x28c" />
+
+                <TextView
+                    android:id="@+id/handlebar"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Handlebar: Aluminum, flatbar, 540 x 25.4 x 6°" />
+
+                <TextView
+                    android:id="@+id/barTape"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bar Tape: Vintage brown" />
+
+                <TextView
+                    android:id="@+id/stem"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stem: Aluminum, 180 x 80 x 18°" />
+
+                <TextView
+                    android:id="@+id/saddle"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saddle: Peugeot brown" />
+
+                <TextView
+                    android:id="@+id/seatpost"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seatpost: Aluminum 26.6 x 300 mm" />
+
+                <TextView
+                    android:id="@+id/weight"
+                    style="@style/ContentProductStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight: 11.3 kg" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="35dp"
+                android:background="@drawable/background_bottombar_buy_product"
+                android:gravity="center">
+
+                <com.example.jaja.GradientTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:text="$ 1999.99"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="44dp"
+                    android:text="Add to Cart"
+                    android:gravity="center"
+                    android:background="@drawable/gradient_background"
+                    style="@style/ContentProductStyle"/>
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

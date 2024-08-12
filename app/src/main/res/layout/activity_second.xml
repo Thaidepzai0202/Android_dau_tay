@@ -1,12 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary_1"
+    android:orientation="vertical"
     tools:context=".SecondActivity">
 
-    <include layout="@layout/title_name_product" />
+    <include
+        android:id="@+id/title_list"
+        layout="@layout/title_name_product" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="60dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/list_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:paddingHorizontal="22dp"
+        android:background="@color/primary_1"
+        android:paddingVertical="8dp">
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="12dp"
+            android:textCursorDrawable="@color/primary_2"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_60"
+            android:hint="Search"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/edit_text_search_background" />
+        
+        <TextView
+            android:id="@+id/apply_button"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:text="Apply"
+            style="@style/NameProductOnListStyle"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@drawable/gradient_background"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/primary_3" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

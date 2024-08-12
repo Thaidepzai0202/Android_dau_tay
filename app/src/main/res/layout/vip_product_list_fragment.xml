@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/primary_1">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/product_vip_page_view2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="25dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/primary_1"
+        android:layout_height="wrap_content">
+        <com.example.jaja.GradientTextView
+            android:id="@+id/product_name_vip"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Product Name"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

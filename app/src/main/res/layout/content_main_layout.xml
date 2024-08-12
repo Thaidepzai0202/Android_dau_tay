@@ -84,7 +84,7 @@
                     android:id="@+id/name_product_content"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PEUGEOT - LR01"
+                    android:text="Name product"
                     android:textColor="@color/white"
                     android:textSize="17dp"
                     android:textStyle="bold" />
@@ -93,7 +93,7 @@
                     android:id="@+id/product_content"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="The LR01 uses the same design as the most iconic bikes from PEUGEOT Cycles' 130-year history and combines it with agile, dynamic performance that's perfectly suited to navigating today's cities. As well as a lugged steel frame and iconic PEUGEOT black-and-white chequer design, this city bike also features a 16-speed Shimano Claris drivetrain.\nThe LR01 uses the same design as the most iconic bikes from PEUGEOT Cycles' 130-year history and combines it with agile, dynamic performance that's perfectly suited to navigating today's cities. As well as a lugged steel frame and iconic PEUGEOT black-and-white chequer design, this city bike also features a 16-speed Shimano Claris drivetrain."
+                    android:text="to be call API"
                     android:textColor="@color/white_60"
                     android:textSize="15dp"
                     android:textStyle="normal" />
@@ -246,6 +246,7 @@
                 android:gravity="center">
 
                 <com.example.jaja.GradientTextView
+                    android:id="@+id/price_product"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="24dp"
@@ -257,6 +258,7 @@
                     android:layout_weight="1"/>
 
                 <TextView
+                    android:id="@+id/add_to_cart_button"
                     android:layout_width="160dp"
                     android:layout_height="44dp"
                     android:text="Add to Cart"

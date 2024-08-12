@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="84dp"
-    android:orientation="horizontal"
+    android:layout_height="104dp"
     android:gravity="center_vertical"
+    android:orientation="horizontal"
     android:paddingVertical="20dp"
     android:paddingLeft="20dp">
 
@@ -26,17 +26,16 @@
     </FrameLayout>
 
     <TextView
-        android:layout_width="match_parent"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_height="match_parent"
         android:id="@+id/name_product"
-        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:paddingLeft="40dp"
+        android:text="Name product"
+        android:textColor="@color/white"
+        android:textSize="20dp"
 
-        android:text="Name Product"/>
-
+        android:textStyle="bold" />
 
 
 </LinearLayout>

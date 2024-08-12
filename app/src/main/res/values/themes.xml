@@ -1,7 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Jaja" parent="Theme.Material3.Light.NoActionBar">
+    <style name="Base.Theme.Jaja" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowFullscreen">true</item>
+
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
